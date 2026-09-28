@@ -25,6 +25,15 @@ a {
     align-items: center;
     padding: 0 7%;
 }
+.header-text, .footer-logo, .sidebar-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-text img, .footer-logo img, .sidebar-logo img{
+    width: 30px;
+    height:40px;
+}
 
 .header h2 {
     color: #877bf4;
@@ -80,9 +89,6 @@ a {
 }
 
 .hero-image {
-    height: 350px;
-    background-color: white;
-    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +97,12 @@ a {
 
 .laptop {
     font-size: 100px;
+}
+.laptop img{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
 .plant {
@@ -117,7 +129,7 @@ a {
 
 .feature-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -135,9 +147,6 @@ a {
     background-color: #fdeff7;
 }
 
-.feature-card:nth-child(4) {
-    background-color: #f3f0ff;
-}
 
 .icon {
     width: 50px;
@@ -150,6 +159,11 @@ a {
     color: white;
     border-radius: 12px;
     font-size: 25px;
+}
+
+.icon img{
+    width: 30px;
+    height: 30px;
 }
 
 .feature-card h3 {
@@ -181,7 +195,16 @@ footer {
     color: white;
     padding: 25px 7%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.footer-logo{
+    margin-bottom: 12px;
+}
+
+.footer-logo h3{
+    margin-top: 10px;
 }
 
 /* DASHBOARD */
@@ -200,6 +223,9 @@ footer {
 
 .sidebar h2 {
     margin-bottom: 35px;
+}
+.sidebar img{
+    margin-bottom: 30px;
 }
 
 .sidebar nav {
@@ -407,6 +433,86 @@ footer {
 .third {
     width: 50%;
     background-color: #56a9ec;
+}
+
+/* SETTINGS PANEL */
+
+.settings-page {
+    grid-template-columns: 230px 1fr 280px;
+}
+
+.settings-panel {
+    background-color: white;
+    padding: 25px 20px;
+    border-left: 1px solid #eeeeee;
+}
+
+.settings-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.settings-heading a {
+    font-size: 28px;
+    color: #667085;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #877bf4;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile p {
+    color: #667085;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.settings-list a {
+    padding: 15px 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.settings-list a:hover {
+    background-color: #f3f0ff;
+}
+
+.settings-list strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.settings-list span {
+    color: #667085;
+    font-size: 13px;
+}
+
+.settings-list .sign-out {
+    color: #ca5aef;
 }
 /* SMALL SCREENS */
 
