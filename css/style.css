@@ -219,6 +219,7 @@ footer {
     background-color: #877bf4;
     color: white;
     padding: 25px 18px;
+    align-self: start;
 }
 
 .sidebar h2 {
@@ -445,6 +446,7 @@ footer {
     background-color: white;
     padding: 25px 20px;
     border-left: 1px solid #eeeeee;
+    align-self: start;
 }
 
 .settings-heading {
